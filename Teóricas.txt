@@ -1,0 +1,38 @@
+1. Importância da organização dos dados em estruturas
+
+Organizar dados da forma certa faz toda a diferença no desempenho do código.
+Se você precisa buscar um contato numa lista de 1 milhão de pessoas, guardar
+tudo num array simples te obriga a olhar um por um. Mas se usar uma estrutura
+adequada, como uma tabela hash, você chega direto no resultado. A estrutura
+de dados certa economiza tempo, memória e torna o código muito mais fácil de manter.
+
+
+2. Importância de algoritmos eficientes
+
+Um algoritmo ruim pode transformar algo que levaria milissegundos em algo que
+leva horas. Imagine ordenar 1 milhão de números com Bubble Sort O(N²) versus
+Merge Sort O(N log N) — a diferença é de horas para segundos. Algoritmos
+eficientes são o que separam um sistema que escala de um que trava quando o
+volume de dados cresce.
+
+
+3. Notação Big O
+
+É a forma que usamos para medir o quanto um algoritmo "sofre" conforme os dados
+crescem. Ela ignora detalhes pequenos e foca no comportamento geral:
+
+  O(1)      -> Constante   -> Acessar um índice do array
+  O(log N)  -> Logarítmico -> Busca binária
+  O(N)      -> Linear      -> Busca linear
+  O(N²)     -> Quadrático  -> Bubble Sort
+
+Se um algoritmo é O(N²) e você dobra a quantidade de dados, o tempo quadruplica.
+Se é O(N), o tempo apenas dobra. O Big O te ajuda a escolher o algoritmo certo
+antes mesmo de escrever o código.
+
+
+4. Bubble Sort
+
+Compara elementos vizinhos e troca os que estão fora de ordem, fazendo o maior
+"borbulhar" para o final a cada passagem. Simples de entender, mas ineficiente
+para listas grandes por ser O(N²).
